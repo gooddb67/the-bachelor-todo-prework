@@ -1,4 +1,4 @@
-describe "bachelor" do 
+describe "bachelor" do
 
   let(:data) { JSON.parse(File.read('spec/fixtures/contestants.json')) }
 
@@ -16,7 +16,7 @@ describe "bachelor" do
     end
   end
 
-  describe "#get_contestant_name" do
+   describe "#get_contestant_name" do
     it "returns 'Carly Waddel' when passed data and the string 'Cruise Ship Singer'" do
       expect(get_contestant_name(data, "Cruise Ship Singer")).to eq("Carly Waddell")
     end
@@ -70,5 +70,4 @@ describe "bachelor" do
     end
   end
 
-end
-
+ end
